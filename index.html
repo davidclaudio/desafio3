@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    
+    <title>Desafio Stage 3</title>
+</head>
+<body>
+    <div class="page">
+        <header id="topo">
+            <h1>Mentoria</h1>
+            <h2>Preencha o formulário abaixo para agendar a sua mentoria</h2>
+        </header>
+
+        <form id="my-form">
+            <fieldset class="fildset">
+                <div class="dados">
+                    <legend>INFORMAÇÕES PESSOAIS</legend>
+                    <div id="name">
+                        <div class="name-lastname">
+                            <label for="event-name"> Nome</label>
+                            <input type="text" id="event-name" required>
+                        </div>
+
+                        <div class="name-lastname">
+                            <label for="event-lastname"> Sobrenome</label>
+                            <input type="text" id="event-lastname" required>
+                        </div>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="event-email"> Email <span>(Digite um email válido)</span></label>
+                        <input type="email" id="event-email" required>
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="event-password"> Senha <span>mínimo de 6 caracteres)</span></label>
+                        <input type="password" id="event-password" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="fildset">
+                <div class="dados">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                    <div id="input-wrapper">
+                        <label for="event-namementor"> Nome do seu mentor <span>(Só o primeiro nome)</span></label>
+                        <input type="text" id="event-namementor" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="fildset">
+                <div class="dados">
+                    <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+                    <div class="hours">
+                        <h2>PRIMEIRA MENTORIA</h2>
+                        <div class="data">
+                            
+                            <div id="input-wrapper-name">
+                                <label for="event-namementor"> Nome do seu mentor <span>(Só o primeiro nome)</span></label>
+                                <input type="text" id="event-namementor" required>
+                            </div>
+                            <div id="input-wrapper">
+                                <label for="event-namementor"> Das </label>
+                                <input type="text" id="event-namementor" required>
+                            </div>
+                            <div id="input-wrapper">
+                                <label for="event-namementor"> Até</label>
+                                <input type="text" id="event-namementor" required>
+                            </div>
+                        </div>
+                        <h2>SEGUNDA MENTORIA</h2>
+                        <div class="data">
+                            
+                            <div id="input-wrapper-name">
+                                <label for="event-namementor"> Nome do seu mentor <span>(Só o primeiro nome)</span></label>
+                                <input type="text" id="event-namementor" required>
+                            </div>
+                            <div id="input-wrapper">
+                                <label for="event-namementor"> Das</label>
+                                <input type="text" id="event-namementor" required>
+                            </div>
+                            <div id="input-wrapper">
+                                <label for="event-namementor"> Até</span></label>
+                                <input type="text" id="event-namementor" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="footer">
+        <footer>
+            <input class="button" type="submit" form="my-form" value="Salvar">
+        </footer>
+    </div>
+</body>
+</html>
